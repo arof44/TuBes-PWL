@@ -3,15 +3,14 @@
 @section('title', 'Home')
 
 @section('content')
-
-@section('header')
+<div style="background-color: #B0E0E6">
 
 <!-- Page Content -->
-<div class="container">
+<div class="container" style="background-color: #B0E0E6">
 
-  <div class="row">
+  <div class="row" >
 
-    <div class="col-lg-3">
+    <div class="col-lg-3" >
 
       <h1 class="my-4">Kuliner Malang</h1>
 
@@ -61,13 +60,13 @@
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="{{('storage/'.$artic->imageurl)}}" alt=""></a>
-              <div class="card-body">
+              <div class="card-body" style="background-color: #B0C4DE">
                 <h4 class="card-title">
                   <p>{{ $artic->title }}</p>
                 </h4>
                 <p class="card-text">{{ Str::limit($artic->content, 100, '...') }}</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer" style="background-color: #778899">
                 <a href="{{ './article/'.$artic->id }}" class="btn btn-primary">Read More &rarr;</a>
               </div>
             </div>

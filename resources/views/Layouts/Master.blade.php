@@ -23,7 +23,7 @@
 
   @yield('header')
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">KULINERAN KUYY</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,7 @@
             @can('manage-articles')
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ url('./manage') }}">Manage Aritcle</a>
+              <a class="dropdown-item" href="{{ url('./manage') }}">Manage Article</a>
               <a class="dropdown-item" href="{{ url('./manageuser') }}">Manage User</a>
             </div>
             @endcan
@@ -93,9 +93,9 @@
 @yield('content')
 
 <!-- Footer -->
-<footer class="py-5 bg-dark">
+<footer class="py-5 bg-info">
   <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; Our Website 2020</p>
+    <p class="m-0 text-center text-dark">Copyright &copy; Our Website 2020</p>
   </div>
   <!-- /.container -->
 </footer>

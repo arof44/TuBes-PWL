@@ -13,14 +13,13 @@
 	<center>
 		<h5>Laporan User</h4>
 		</center>
-		<table class='table table-bordered'>
+		<table class='table table-bordered' border="1">
 			<thead>
 				<tr>
 					<th>No</th>
 					<th>ID</th>
 					<th>Nama</th>
 					<th>Email</th>
-					<th>Foto</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,7 +30,6 @@
 					<td>{{$u->id}}</td>
 					<td>{{$u->name}}</td>
 					<td>{{$u->email}}</td>
-					<td><img width="150px" src="{{('storage/'.$u->imageurl)}}"></td>
 				</tr>
 				@endforeach
 			</tbody>
